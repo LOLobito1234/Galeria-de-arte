@@ -1,6 +1,7 @@
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
+import Logo from './Logo';
 
 // Definición de rutas
 const navigation = [
@@ -16,12 +17,7 @@ function classNames(...classes: ClassValue[]): string {
 }
 
 // Icono del logo
-const LogoIcon = () => (
-  <svg width="30" height="30" viewBox="0 0 24 24" fill="none">
-    <path d="M12 2L15 6L18 3L21 7L18 11H6L3 7L6 3L9 6L12 2Z" fill="#E74C3C" />
-    <path d="M4 11H20V22H4V11Z" fill="#F3F4F6" />
-  </svg>
-);
+
 
 export default function Header() {
   return (
@@ -36,7 +32,7 @@ export default function Header() {
           {/* Logo */}
           <div className="flex shrink-0 items-center">
             <Link href="/" className="flex items-center cursor-pointer">
-              <LogoIcon />
+              <Logo/>
               <h1 className="ml-2 text-xl font-black tracking-widest text-red-500 uppercase">
                 Galeria de arte
               </h1>

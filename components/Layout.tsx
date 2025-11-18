@@ -31,7 +31,7 @@ export default function Layout() {
                          xl:text-8xl            
                          font-extrabold text-white tracking-widest text-shadow-lg
                             ">
-                        TIENDA DE ARTE
+                        Galeria de Arte
                     </h1>
 
                 </div>
