@@ -12,16 +12,16 @@ import g7 from "../../public/Images/g7.webp";
 import g8 from "../../public/Images/g8.webp";
 import g9 from "../../public/Images/g9.webp";
 import g10 from "../../public/Images/g10.webp";
+import g11 from "../../public/Images/g11.webp";
+import g12 from "../../public/Images/g12.webp";
 
-import Header from "@/components/Header";
-import Footer from "@/components/footer";
 
-const images = [g1, g2, g3, g4, g5, g6, g7, g8, g9, g10];
+
+const images = [g1, g2, g3, g4, g5, g6, g7, g8, g9, g10, g11, g12];
 
 export default function StaticGallery() {
     return (
         <>
-            <Header />
 
             <section className="py-20 px-6 max-w-7xl mx-auto">
                 <h2 className="text-center text-4xl font-extrabold text-red-500 mb-14">
@@ -51,7 +51,6 @@ export default function StaticGallery() {
                 </div>
             </section>
 
-            <Footer />
         </>
     );
 }
