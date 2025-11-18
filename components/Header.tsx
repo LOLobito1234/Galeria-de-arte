@@ -34,7 +34,7 @@ export default function Header() {
             <Link href="/" className="flex items-center cursor-pointer">
               <Logo/>
               <h1 className="ml-2 text-xl font-black tracking-widest text-red-500 uppercase">
-                Galeria de arte
+                Nadia Reyes
               </h1>
             </Link>
           </div>

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import g1 from '../public/Images/f1.webp';
+import IMGCliente from '../public/Images/IMGCliente.webp';
 
 export default function Layout() {
     return (
@@ -9,11 +9,11 @@ export default function Layout() {
 
                 {/* Imagen */}
                 <Image
-                    src={g1}
+                    src={IMGCliente}
                     alt="Imagen de fondo"
                     fill
                     className="object-cover"
-                    quality={95}     // 🟢 mejora calidad
+                    quality={100}     // 🟢 mejora calidad
                     priority
                 />
 
@@ -31,7 +31,7 @@ export default function Layout() {
                          xl:text-8xl            
                          font-extrabold text-white tracking-widest text-shadow-lg
                             ">
-                        Galeria de Arte
+                        Nadia Judith Reyes Morales
                     </h1>
 
                 </div>
@@ -45,7 +45,7 @@ export default function Layout() {
                          lg:text-5xl            
                         text-3xl
                          text-gray-700">
-                    Explora nuestra colección única de obras.
+                    Conoce mi trabajo
                 </p>
             </div>
 
