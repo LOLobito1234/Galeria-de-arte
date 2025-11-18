@@ -6,10 +6,10 @@ import g4 from "../public/Images/g4.webp";
 import Link from "next/link"; 
 
 const galleryData = [
-  { src: g1, title: "El Sueño de la Quimera" },
-  { src: g2, title: "Retrato en Azul" },
-  { src: g3, title: "Atardecer Abstracto" },
-  { src: g4, title: "Luz y Sombra" },
+  { src: g1, title: "Mis dos cuerpos" },
+  { src: g2, title: "Deseo" },
+  { src: g3, title: "Santa" },
+  { src: g4, title: "Feliz Cumpleaños" },
 ];
 
 export default function GaleriaAnimada() {

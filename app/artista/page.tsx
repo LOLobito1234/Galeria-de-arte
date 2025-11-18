@@ -35,7 +35,7 @@ export default function Artista() {
         </div>
 
         <div>
-          <h2 className="text-2xl font-bold text-red-500 mb-3">Experiencia</h2>
+          <h3 className="text-2xl font-bold text-red-500 mb-3">Experiencia</h3>
           <ul className="text-gray-700 space-y-2">
             <li>Asistente de Laureana Toledo (2022)</li>
             <li>Becaria en Tilma LAB Arte y Diseño (2023–2024)</li>
@@ -44,7 +44,7 @@ export default function Artista() {
         </div>
 
         <div>
-          <h2 className="text-2xl font-bold text-red-500 mb-3">Exposiciones destacadas</h2>
+          <h4 className="text-2xl font-bold text-red-500 mb-3">Exposiciones destacadas</h4>
           <ul className="text-gray-700 space-y-2">
             <li>Donde las mariposas guardan sus alas – Individual (2025)</li>
             <li>Tras el desamor maternal – Individual (2025)</li>
@@ -56,7 +56,7 @@ export default function Artista() {
         </div>
 
         <div>
-          <h2 className="text-2xl font-bold text-red-500 mb-3">Publicaciones</h2>
+          <h5 className="text-2xl font-bold text-red-500 mb-3">Publicaciones</h5>
           <ul className="text-gray-700 space-y-2">
             <li>
               <em>El fértil</em> — Fotografía de portada  
