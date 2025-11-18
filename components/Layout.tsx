@@ -23,7 +23,7 @@ export default function Layout() {
 
                 {/* Texto */}
                 <div className="absolute inset-0 flex items-center justify-center">
-                    <h1 className="
+                    <h2 className="
                          text-3xl             
                          sm:text-4xl            
                          md:text-5xl            
@@ -32,7 +32,7 @@ export default function Layout() {
                          font-extrabold text-white tracking-widest text-shadow-lg
                             ">
                         Nadia Reyes
-                    </h1>
+                    </h2>
 
                 </div>
             </div>
