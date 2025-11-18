@@ -1,36 +1,20 @@
 import Link from "next/link";
-import { Facebook, Instagram, X, Github, Youtube } from 'lucide-react';
+import {  Instagram, } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   // Array de datos para las redes sociales, incluyendo el icono y el enlace
   const socialLinks = [
-    { 
-      Icon: Facebook, 
-      href: "https://facebook.com/yourcompany", 
-      name: "Facebook" 
-    },
+  
     { 
       Icon: Instagram, 
-      href: "https://instagram.com/yourcompany", 
+      href: "https://www.instagram.com/nadiareyes___/", 
       name: "Instagram" 
     },
-    { 
-      Icon: X, // El icono de Lucide para la plataforma X (antes Twitter)
-      href: "https://x.com/yourcompany", 
-      name: "X (Twitter)" 
-    },
-    { 
-      Icon: Github, 
-      href: "https://github.com/yourcompany", 
-      name: "GitHub" 
-    },
-    { 
-      Icon: Youtube, 
-      href: "https://youtube.com/yourcompany", 
-      name: "YouTube" 
-    },
+  
+  
+   
   ];
 
   return (
@@ -45,7 +29,7 @@ export default function Footer() {
       ">
         {/* Sección de Copyright */}
         <p className="mb-4 sm:mb-0">
-          Copyright &copy; {currentYear} Your Company, Inc. All rights reserved.
+          Copyright &copy; {currentYear} tu compañía, todos los derechos reservados.
         </p>
 
         {/* Sección de Redes Sociales */}

@@ -3,7 +3,8 @@ import { Outfit } from "next/font/google";
 import "./globals.css";
 
 import Header from "@/components/Header";
-import Footer from "@/components/footer";
+import Footer from "@/components/PieDePagina";
+import Wts from "@/components/Wts";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -30,6 +31,7 @@ export default function RootLayout({
         <main className="min-h-screen">
           {children}
         </main>
+        <Wts/>
 
         {/* 📌 Footer global */}
         <Footer/>
