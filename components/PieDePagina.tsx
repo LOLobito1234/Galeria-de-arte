@@ -29,7 +29,7 @@ export default function Footer() {
       ">
         {/* Sección de Copyright */}
         <p className="mb-4 sm:mb-0">
-          Copyright &copy; {currentYear} tu compañía, todos los derechos reservados.
+          Copyright &copy; {currentYear} Nadia Reyes, todos los derechos reservados.
         </p>
 
         {/* Sección de Redes Sociales */}

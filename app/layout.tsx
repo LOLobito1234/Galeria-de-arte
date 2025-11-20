@@ -17,11 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     url: "https://www.nadiareyes.com",
     siteName: 'Nadia Reyes Artista',
-    images: [
-      {
-        url:"https://www.nadiareyes.com/Images/logo.ico",
-      }
-    ]
+   
   },
   verification: {
     google: 'wHOqqWEvoeFVaatDN4hYNyM6sdRjTKN8ChsF8uDNRNY',
