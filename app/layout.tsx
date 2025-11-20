@@ -13,7 +13,12 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   title: "Nadia Reyes Artista",
   description: "Obras Profesionales de Nadia Reyes",
+
+  verifications: {
+    google: 'wHOqqWEvoeFVaatDN4hYNyM6sdRjTKN8ChsF8uDNRNY',
+  }
 };
+
 
 export default function RootLayout({
   children,
