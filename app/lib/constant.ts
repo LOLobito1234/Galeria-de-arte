@@ -1,0 +1,2 @@
+export const title = "Nadia Reyes Artista";
+export const description = "Nadia Reyes — Artista visual especializada en cuadros al óleo. Descubre obras originales, retratos y piezas personalizadas creadas con técnica, color y expresión única. Arte auténtico para decorar, inspirar y transformar tus espacios.";

@@ -6,25 +6,47 @@ import Header from "@/components/Header";
 import Footer from "@/components/PieDePagina";
 import Wts from "@/components/Wts";
 
+// 1. CORRECCIÓN: Importar title desde tu archivo de constantes, no de 'process'
+import { title, description } from "./lib/constant";
+
 const outfit = Outfit({
   subsets: ["latin"],
+  // Opcional: define variable CSS si usas Tailwind para la fuente
+  variable: "--font-outfit", 
 });
 
 export const metadata: Metadata = {
-  title: "Nadia Reyes Artista",
-  description: "Obras Profesionales de Nadia Reyes",
-
+  title: {
+    default: title || "Nadia Reyes Artista", // Fallback por seguridad
+    template: `%s | ${title || "Nadia Reyes"}`,
+  },
+  description,
+  keywords: [
+    "Nadia Reyes",
+    "artista visual",
+    "cuadros al óleo",
+    "arte original",
+    "pinturas hechas a mano",
+    "galería de arte online",
+    "arte contemporáneo",
+    "cuadros personalizados",
+    "pintura al óleo profesional",
+    "artista mexicana",
+  ],
   openGraph: {
+    type: "website", // Recomendado agregar el tipo
+    locale: "es_MX", // O es_ES, ayuda a SEO local
     url: "https://www.nadiareyes.com",
-    siteName: 'Nadia Reyes Artista',
-   
+    siteName: "Nadia Reyes Artista",
+    title: title,
+    description: description,
   },
   verification: {
-    google: 'wHOqqWEvoeFVaatDN4hYNyM6sdRjTKN8ChsF8uDNRNY',
+    google: "wHOqqWEvoeFVaatDN4hYNyM6sdRjTKN8ChsF8uDNRNY",
   },
+  // Recomendado: Añadir la base del dominio para metadatos relativos
+  metadataBase: new URL("https://www.nadiareyes.com"),
 };
-
-
 
 export default function RootLayout({
   children,
@@ -33,20 +55,25 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={`${outfit.className} bg-white`}>
-
-        {/* 📌 Se carga en TODAS las páginas */}
+      {/* 2. MEJORA CSS: 
+         - flex flex-col: Convierte el body en columna.
+         - min-h-screen: El body ocupa al menos toda la pantalla.
+      */}
+      <body className={`${outfit.className} bg-white flex flex-col min-h-screen`}>
+        
         <Header />
 
-        {/* 📌 Contenido dinámico */}
-        <main className="min-h-screen">
+        {/* 3. MEJORA CSS:
+           - flex-grow (o flex-1): Hace que el main ocupe todo el espacio disponible,
+             empujando el footer hacia abajo.
+        */}
+        <main className="grow w-full">
           {children}
         </main>
+        
         <Wts />
 
-        {/* 📌 Footer global */}
         <Footer />
-
       </body>
     </html>
   );
